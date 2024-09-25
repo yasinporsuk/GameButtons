@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <!-- 3x3 botones -->
+        <GridLayout
+            android:id="@+id/buttonGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rowCount="3"
+            android:columnCount="3"
+            android:padding="16dp">
+
+            <!-- fila1 -->
+            <Button
+                android:id="@+id/button00"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="Top Left Button"
+                android:backgroundTint="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/button01"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="Top Middle Button"
+                android:backgroundTint="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/button02"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="Top Right Button"
+                android:backgroundTint="@android:color/darker_gray" />
+
+            <!-- fila2 -->
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="Middle Left Button"
+                android:backgroundTint="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="Middle Center Button"
+                android:backgroundTint="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/button12"
+                style="@style/Base.Theme.GameButtons"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:backgroundTint="@android:color/darker_gray"
+                android:contentDescription="Middle Right Button" />
+
+            <!-- fila3-->
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="Bottom Left Button"
+                android:backgroundTint="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/button21"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="Bottom Middle Button"
+                android:backgroundTint="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="Bottom Right Button"
+                android:backgroundTint="@android:color/darker_gray" />
+
+        </GridLayout>
+
+        <!-- boton reiniciar -->
+        <Button
+            android:id="@+id/refreshButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refresh"
+            android:padding="16dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="Refresh Button" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
